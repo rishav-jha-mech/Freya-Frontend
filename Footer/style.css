@@ -1,0 +1,191 @@
+/* Facebook #FF3E5B97
+Twitter  #FF59ADED
+Google+  #FFDB4C3E
+Linkedin #FF1184CC
+Pink Baseball logo #FFEC4C8A
+Signup Button #FFFC384C
+
+Dark Bg - #FF3E4450
+
+Footer 1 colors
+footer top -
+ADeepPurple - #FF6451CE corresponding text-color - #FFDAD1FC
+
+footer body - #FF1C2431
+
+footer bottom - #FF151B28 */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+a{
+  text-decoration: none;
+  color: unset;
+}
+a:hover{
+  color: unset;
+}
+.my-footer{
+  font-family: 'Roboto', sans-serif;
+}
+
+/*FOOTER-TOP FOOTER-TOP FOOTER-TOP FOOTER-TOP FOOTER-TOP FOOTER-TOP FOOTER-TOP FOOTER-TOP FOOTER-TOP FOOTER-TOP FOOTER-TOP FOOTER-TOP FOOTER-TOP FOOTER-TOP FOOTER-TOP*/
+.my-footer-top{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(100,81,206);
+  color: rgb(234, 231, 255);
+}
+.my-footer-top-right{
+  display: flex;
+  justify-content: space-between;
+  width: 225px;
+  margin-right: 25px !important;
+}
+.my-footer-top-right i{
+  padding: 8px;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+.my-footer-top-right i:hover{
+  background-color: rgba(0, 0, 0, 0.31);
+  transition: 0.3s;
+}
+.my-footer-top-left{
+  font-size: 16px;
+  font-weight: 500;
+  margin-left: 25px !important;
+}
+@media(max-width:600px){
+  .my-footer-top{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .my-footer-top-left{
+    margin-left: 8px !important;
+  }
+  .my-footer-top-right{
+    margin-top: 20px !important;
+    justify-content: unset;
+    width: 100% !important;
+  }
+  .my-footer-top-right i{
+    text-align: center;
+    width: 100%;
+  }
+}
+
+/*FOOTER-TOP FOOTER-TOP FOOTER-TOP FOOTER-TOP FOOTER-TOP FOOTER-TOP FOOTER-TOP FOOTER-TOP FOOTER-TOP FOOTER-TOP FOOTER-TOP FOOTER-TOP FOOTER-TOP FOOTER-TOP FOOTER-TOP*/
+
+/*FOOTER-BOTTOM FOOTER-BOTTOM FOOTER-BOTTOM FOOTER-BOTTOM FOOTER-BOTTOM FOOTER-BOTTOM FOOTER-BOTTOM FOOTER-BOTTOM FOOTER-BOTTOM FOOTER-BOTTOM FOOTER-BOTTOM FOOTER-BOTTOM */
+
+.my-footer-bottom{
+    background-color: rgb(1, 1, 49);
+    color: white;
+    text-align: center;
+    padding: 18px;
+}
+@media(max-width:600px){
+  .my-footer-bottom{
+    font-size: 14px;
+  }
+}
+
+/*FOOTER-BOTTOM FOOTER-BOTTOM FOOTER-BOTTOM FOOTER-BOTTOM FOOTER-BOTTOM FOOTER-BOTTOM FOOTER-BOTTOM FOOTER-BOTTOM FOOTER-BOTTOM FOOTER-BOTTOM FOOTER-BOTTOM FOOTER-BOTTOM */
+
+
+
+/* FOOTER-BODY  FOOTER-BODY  FOOTER-BODY  FOOTER-BODY  FOOTER-BODY  FOOTER-BODY  FOOTER-BODY  FOOTER-BODY  FOOTER-BODY  FOOTER-BODY  FOOTER-BODY  FOOTER-BODY  FOOTER-BODY */
+
+.my-footer-body{
+  background-color: rgb(27, 27, 27);
+  color: white;
+  display: flex;
+  width: 100%;
+  /* min-height: 350px; */
+  padding: 50px 25px;
+}
+
+.my-footer-body .my-column-child{
+  width: 25%;
+  padding: 25px;
+}
+.my-column-child h2{
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.my-column-child hr{
+  margin-top: 0;
+  margin-left: -2px;
+  color: purple;
+  opacity: 0.7;
+  height: 1.5px;
+  width: 40%;
+  margin-bottom: 20px;
+}
+.my-column-child-special{
+  line-height: 28px;
+}
+.my-column-child p a{
+  transition: 0.5s;
+}
+.my-column-child p a:hover{
+  color: aqua;
+  border-left: 3px solid chartreuse;
+  padding-left: 5px;
+  transition: 0.2s;
+}
+.foo-one h2{
+  font-size: 35px;
+  letter-spacing: 5px;
+}
+.foo-four p:hover{
+  color: #ff1;
+}
+@media(max-width:1140px){
+.my-footer-body .my-column-child{
+  padding: 15px;
+}
+}
+@media(max-width:1056px){
+.my-footer-body .my-column-child{
+  width: unset;
+}
+.foo-one{
+  width: 30% !important;
+}
+.foo-two{
+  width: 20% !important;
+}
+.foo-three{  
+  width: 20% !important;
+}
+.foo-four{
+  width: 30% !important;
+}
+}
+@media(max-width:800px){
+  .my-footer-body{
+    flex-direction: column;
+  }
+  .my-footer-body .my-column-child{
+    width: 100% !important;
+  }
+  .my-column-child hr{
+    width: 100% !important;
+  }
+  .foo-one h2{
+    font-size: 50px !important;
+  }
+  .my-column-child h2{
+    font-size: 20px !important;
+  }
+  .my-footer-body{
+    padding: 25px 0px;
+  }
+  .my-footer-body .my-column-child{
+    padding: 15px;
+  }
+}
+/* FOOTER-BODY  FOOTER-BODY  FOOTER-BODY  FOOTER-BODY  FOOTER-BODY  FOOTER-BODY  FOOTER-BODY  FOOTER-BODY  FOOTER-BODY  FOOTER-BODY  FOOTER-BODY  FOOTER-BODY  FOOTER-BODY */
