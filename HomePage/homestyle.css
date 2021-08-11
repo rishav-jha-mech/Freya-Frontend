@@ -1,0 +1,206 @@
+.page1 {
+  background: url(https://wallpapercave.com/wp/wp2686499.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 92vh;
+  background-blend-mode: color;
+  background-color: rgba(0, 0, 0, 0.18);
+}
+.page1 .content-content {
+  padding-top: 11%;
+  text-align: center;
+  user-select: none;
+  animation: homepageAnimation 0.6s linear;
+}
+@keyframes homepageAnimation {
+  0% {
+    padding-top: -350px;
+    padding-top: 0;
+    opacity: 0;
+  }
+  100% {
+    position: relative;
+    opacity: 1;
+  }
+}
+.page1 .content-content h1 {
+  font-size: 65px;
+  font-weight: 800;
+  text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.347);
+  color: white;
+}
+@media (max-width: 1150px) {
+  .block {
+    display: block;
+    margin-top: 28px;
+  }
+  .none {
+    display: none;
+  }
+}
+@media (max-width: 600px) {
+  .page1 .content-content h1 {
+    font-size: 45px;
+  }
+}
+@media (max-width: 450px) {
+  .page1 .content-content h1 {
+    font-size: 32px;
+  }
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.page2 {
+  /* min-height: 85vh; */
+  background-color: rgb(241, 239, 239);
+  padding: 15px 5% 55px 5%;
+  font-family: "Poppins", sans-serif;
+}
+.page2 h1 {
+  font-size: 45px;
+  font-weight: 700;
+  padding: 25px;
+  padding-bottom: 0;
+  color: black;
+}
+.page2 p {
+  padding-left: 25px;
+  color: black;
+  font-weight: 600;
+}
+.page2 .my-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.my-container .thisImage {
+  /* background-color: burlywood; */
+  width: 47%;
+  /* overflow: hidden; */
+}
+.my-container .thisImage img {
+  width: 600px;
+  height: auto;
+}
+.my-container .thisContent {
+  /* background-color: teal; */
+  width: 53%;
+  padding: 8px;
+  margin-left: 45px;
+  padding-top: 0;
+}
+.my-container .thisContent h2 {
+  font-size: 35px;
+  font-weight: 600;
+  color: black;
+  padding: 6px;
+}
+.my-container .thisContent hr {
+  padding: 0;
+  margin: 0;
+  margin-top: -5px;
+}
+.my-container .thisContent h5 {
+  margin-top: 15px;
+  font-size: 15px;
+  line-height: 28px;
+  color: black;
+  text-align: left;
+}
+@media (max-width: 1335px) {
+  .my-container {
+    flex-direction: column;
+    justify-content: unset;
+    align-items: center;
+  }
+  .le{
+      flex-direction: column-reverse !important;
+  }
+  .my-container .thisImage {
+    width: 100%;
+    height: auto;
+  }
+  .my-container .thisContent {
+    width: 100%;
+    margin-left: 0;
+  }
+  .my-container .thisImage img {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+.my-container .thisContent h5 {
+    text-align: center;
+}
+.r11{
+    margin-right: 0 !important;
+}
+}
+@media (max-width: 650px) {
+  .page2 {
+    padding: 1% 0 3% 0;
+  }
+  .my-container .thisImage{
+      padding: 8px;
+  }
+  .page2 p{
+      font-size: 16px;
+      font-weight: 500;
+      text-align: center;
+  }
+}
+@media(max-width:450px){
+    .page2 h1 {
+        padding-left: 5px;
+        font-size: 32px;
+        text-align: center;
+    }
+    .page2 p{
+        padding-left: 3px;
+    }
+    .my-container .thisImage img{
+        margin-bottom: 15px;
+    }
+    .my-container .thisContent h2 {
+        font-size: 28px;
+    }
+    .my-container .thisContent h5 {
+      margin-top: 15px;
+      font-size: 13px;
+      line-height: 22px;
+    }
+}
+.twobuttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #ff1565; */
+    /* margin-top: 3vh; */
+}
+.twobuttons a{
+    padding: 12px 20px 12px 20px;
+    display: flex;
+    margin-top: 12px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 6px;
+}
+
+.thisLogin{
+    background: linear-gradient(45deg, #7f00ff, #e100ff);
+    letter-spacing: 0.5px;
+}
+.thisSingup{
+    border: 2px solid #7f00ff;
+    color: #7f00ff !important;
+    margin-left: 25px;
+}
+.r11{
+    margin-left: 0 !important;
+    margin-right: 45px;
+}
+#r9878{
+    max-height: 420px;
+}

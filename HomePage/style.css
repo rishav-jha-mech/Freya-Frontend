@@ -1,4 +1,118 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+.active{
+    color: dodgerblue;
+    border-bottom: 4px solid dodgerblue;
+}
+.my-navbar{
+    background-color: rgb(0,1,86);
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 22px;
+}
+.my-navbar-links{
+    padding: 22px;
+    font-weight: 400;
+}
+.my-navbar-links:hover{
+    color: dodgerblue;
+    border-bottom: 4px solid dodgerblue;
+}
+.Freya{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: orangered;
+    border-radius: 4px;
+    margin-left: 25px;
+    padding: 55px 15px 10px 15px;
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.233);
+    z-index: 100;
+}
+.Freya a{
+    font-size: 35px;
+    font-weight: 700;
+    text-shadow: 6px 6px 10px rgba(0, 0, 0, 0.226);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+.Freya a:hover{
+    color: unset;
+}
+.fa-bars,.fa-times{
+    display: none;
+    font-size: 25px;
+}
+
+@media(max-width:1225px){
+    .my-navbar{
+        justify-content: flex-end;
+    }
+}
+@media(max-width:1083px){
+    .my-navbar-links{
+        padding-bottom: 15px;
+        letter-spacing: 1px;
+    }
+    .my-navbar-links-section{
+        padding-bottom: 20px;
+    }
+    .my-navbar{
+        justify-content: flex-end;
+    }
+    .my-navbar-links-section{
+        display: none;
+        position: absolute;
+        top: 68.8px;
+        left: 0;
+        text-align: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        background-color: #333;
+        animation: navbar-animate 0.2s linear;
+    }
+    @keyframes navbar-animate{
+        0%{
+            left: -75vw;
+        }
+        100%{
+            left: 0;
+        }
+    }
+    .fa-times,.fa-bars{
+        display: block;
+    }
+    .my-navbar-links{
+        padding: 22px;
+    }
+    .my-navbar-links:hover{
+        border-bottom: 2px solid dodgerblue;
+    }
+    .active{
+        color: dodgerblue;
+        border-bottom: 2px solid dodgerblue;
+    }
+}
+@media(max-width:600px){
+    
+.Freya{
+    background-color: transparent;
+    border-radius: 0px;
+    margin-left: 0;
+    padding: 20px 15px 12px 15px;
+    box-shadow: none;
+    z-index: 100;
+}
+.Freya a{
+    font-size: 25px;
+    font-weight: 700;
+    text-shadow: 6px 6px 10px rgba(0, 0, 0, 0.226);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+}
+
 
 a{
   text-decoration: none;
@@ -18,6 +132,7 @@ a:hover{
   justify-content: space-between;
   background-color: rgb(100,81,206);
   color: rgb(234, 231, 255);
+  min-height: 80px;
 }
 .my-footer-top-right{
   display: flex;
