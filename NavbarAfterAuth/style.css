@@ -24,7 +24,7 @@ a{
     position: absolute;
     top: 0;
     left: 0;
-    background-color: dodgerblue;
+    background-color: orangered;
     border-radius: 4px;
     margin-left: 25px;
     padding: 55px 15px 10px 15px;
@@ -131,6 +131,9 @@ img{
     margin-left: 80px;
     border-left: 4px solid #ff156f;
     animation: dropdowntoup 0.3s linear;
+}
+.my-navbar-links{
+    cursor: pointer;
 }
 .my-dropdown-navbar-links{
     font-size: 14px;

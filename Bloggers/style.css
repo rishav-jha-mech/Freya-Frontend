@@ -1,0 +1,447 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+.active{
+    color: dodgerblue;
+    border-bottom: 4px solid dodgerblue;
+}
+.my-navbar{
+    background-color: rgb(0,1,86);
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 22px;
+}
+.my-navbar-links{
+    padding: 22px;
+    font-weight: 400;
+}
+.my-navbar-links:hover{
+    color: dodgerblue;
+    border-bottom: 4px solid dodgerblue;
+}
+.Freya{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: orangered;
+    border-radius: 4px;
+    margin-left: 25px;
+    padding: 55px 15px 10px 15px;
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.233);
+    z-index: 100;
+}
+.Freya a{
+    font-size: 35px;
+    font-weight: 700;
+    text-shadow: 6px 6px 10px rgba(0, 0, 0, 0.226);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+.Freya a:hover{
+    color: unset;
+}
+.fa-bars,.fa-times{
+    display: none;
+    font-size: 25px;
+}
+
+@media(max-width:1225px){
+    .my-navbar{
+        justify-content: flex-end;
+    }
+}
+@media(max-width:1083px){
+    .my-navbar-links{
+        padding-bottom: 15px;
+        letter-spacing: 1px;
+    }
+    .my-navbar-links-section{
+        padding-bottom: 20px;
+    }
+    .my-navbar{
+        justify-content: flex-end;
+    }
+    .my-navbar-links-section{
+        display: none;
+        position: absolute;
+        top: 68.8px;
+        left: 0;
+        text-align: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        background-color: #333;
+        animation: navbar-animate 0.2s linear;
+    }
+    @keyframes navbar-animate{
+        0%{
+            left: -75vw;
+        }
+        100%{
+            left: 0;
+        }
+    }
+    .fa-times,.fa-bars{
+        display: block;
+    }
+    .my-navbar-links{
+        padding: 22px;
+    }
+    .my-navbar-links:hover{
+        border-bottom: 2px solid dodgerblue;
+    }
+    .active{
+        color: dodgerblue;
+        border-bottom: 2px solid dodgerblue;
+    }
+}
+@media(max-width:600px){
+    
+.Freya{
+    background-color: transparent;
+    border-radius: 0px;
+    margin-left: 0;
+    padding: 20px 15px 12px 15px;
+    box-shadow: none;
+    z-index: 100;
+}
+.Freya a{
+    font-size: 25px;
+    font-weight: 700;
+    text-shadow: 6px 6px 10px rgba(0, 0, 0, 0.226);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+}
+
+
+a{
+  text-decoration: none;
+  color: unset;
+}
+a:hover{
+  color: unset;
+}
+.my-footer{
+  font-family: 'Roboto', sans-serif;
+}
+
+/*FOOTER-TOP FOOTER-TOP FOOTER-TOP FOOTER-TOP FOOTER-TOP FOOTER-TOP FOOTER-TOP FOOTER-TOP FOOTER-TOP FOOTER-TOP FOOTER-TOP FOOTER-TOP FOOTER-TOP FOOTER-TOP FOOTER-TOP*/
+.my-footer-top{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(100,81,206);
+  color: rgb(234, 231, 255);
+  min-height: 80px;
+}
+.my-footer-top-right{
+  display: flex;
+  justify-content: space-between;
+  width: 225px;
+  margin-right: 25px !important;
+}
+.my-footer-top-right i{
+  padding: 8px;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+.my-footer-top-right i:hover{
+  background-color: rgba(0, 0, 0, 0.31);
+  transition: 0.3s;
+}
+.my-footer-top-left{
+  font-size: 16px;
+  font-weight: 500;
+  margin-left: 25px !important;
+}
+@media(max-width:600px){
+  .my-footer-top{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .my-footer-top-left{
+    margin-left: 8px !important;
+  }
+  .my-footer-top-right{
+    margin-top: 20px !important;
+    justify-content: unset;
+    width: 100% !important;
+  }
+  .my-footer-top-right i{
+    text-align: center;
+    width: 100%;
+  }
+}
+
+/*FOOTER-TOP FOOTER-TOP FOOTER-TOP FOOTER-TOP FOOTER-TOP FOOTER-TOP FOOTER-TOP FOOTER-TOP FOOTER-TOP FOOTER-TOP FOOTER-TOP FOOTER-TOP FOOTER-TOP FOOTER-TOP FOOTER-TOP*/
+
+/*FOOTER-BOTTOM FOOTER-BOTTOM FOOTER-BOTTOM FOOTER-BOTTOM FOOTER-BOTTOM FOOTER-BOTTOM FOOTER-BOTTOM FOOTER-BOTTOM FOOTER-BOTTOM FOOTER-BOTTOM FOOTER-BOTTOM FOOTER-BOTTOM */
+
+.my-footer-bottom{
+    background-color: rgb(1, 1, 49);
+    color: white;
+    text-align: center;
+    padding: 18px;
+}
+@media(max-width:600px){
+  .my-footer-bottom{
+    font-size: 14px;
+  }
+}
+
+/*FOOTER-BOTTOM FOOTER-BOTTOM FOOTER-BOTTOM FOOTER-BOTTOM FOOTER-BOTTOM FOOTER-BOTTOM FOOTER-BOTTOM FOOTER-BOTTOM FOOTER-BOTTOM FOOTER-BOTTOM FOOTER-BOTTOM FOOTER-BOTTOM */
+
+
+
+/* FOOTER-BODY  FOOTER-BODY  FOOTER-BODY  FOOTER-BODY  FOOTER-BODY  FOOTER-BODY  FOOTER-BODY  FOOTER-BODY  FOOTER-BODY  FOOTER-BODY  FOOTER-BODY  FOOTER-BODY  FOOTER-BODY */
+
+.my-footer-body{
+  background-color: rgb(27, 27, 27);
+  color: white;
+  display: flex;
+  width: 100%;
+  /* min-height: 350px; */
+  padding: 50px 25px;
+}
+
+.my-footer-body .my-column-child{
+  width: 25%;
+  padding: 25px;
+}
+.my-column-child h2{
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.my-column-child hr{
+  margin-top: 0;
+  margin-left: -2px;
+  color: purple;
+  opacity: 0.7;
+  height: 1.5px;
+  width: 40%;
+  margin-bottom: 20px;
+}
+.my-column-child-special{
+  line-height: 28px;
+}
+.my-column-child p a{
+  transition: 0.5s;
+}
+.my-column-child p a:hover{
+  color: aqua;
+  border-left: 3px solid chartreuse;
+  padding-left: 5px;
+  transition: 0.2s;
+}
+.foo-one h2{
+  font-size: 35px;
+  letter-spacing: 5px;
+}
+.foo-four p:hover{
+  color: #ff1;
+}
+@media(max-width:1140px){
+.my-footer-body .my-column-child{
+  padding: 15px;
+}
+}
+@media(max-width:1056px){
+.my-footer-body .my-column-child{
+  width: unset;
+}
+.foo-one{
+  width: 30% !important;
+}
+.foo-two{
+  width: 20% !important;
+}
+.foo-three{  
+  width: 20% !important;
+}
+.foo-four{
+  width: 30% !important;
+}
+}
+@media(max-width:800px){
+  .my-footer-body{
+    flex-direction: column;
+  }
+  .my-footer-body .my-column-child{
+    width: 100% !important;
+  }
+  .my-column-child hr{
+    width: 100% !important;
+  }
+  .foo-one h2{
+    font-size: 50px !important;
+  }
+  .my-column-child h2{
+    font-size: 20px !important;
+  }
+  .my-footer-body{
+    padding: 25px 0px;
+  }
+  .my-footer-body .my-column-child{
+    padding: 15px;
+  }
+}
+/* FOOTER-BODY  FOOTER-BODY  FOOTER-BODY  FOOTER-BODY  FOOTER-BODY  FOOTER-BODY  FOOTER-BODY  FOOTER-BODY  FOOTER-BODY  FOOTER-BODY  FOOTER-BODY  FOOTER-BODY  FOOTER-BODY */
+
+
+
+
+
+/* The Page  The Page  The Page  The Page  The Page  The Page  The Page  The Page  The Page  The Page  The Page  The Page  The Page  The Page  The Page  The Page  The Page  The Page  The Page  The Page  The Page  The Page  The Page  The Page  The Page  The Page  The Page  The Page  The Page  The Page  The Page  The Page */
+    a{
+        text-decoration: none;
+        color: unset;
+    }
+    a:hover{
+        color: unset;
+    }
+    img {
+         pointer-events: none;
+    }
+    .lagertha{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #fff;
+        min-height: 63vh;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #000;
+        background-color: #222;
+        margin: 0;
+        padding: 0;
+    }
+
+    .swiper-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        width: 100%;
+        padding-top:    15px;
+        padding-bottom: 15px;
+    }
+
+    .swiper-slide {
+        background-position: center;
+        background-size: cover;
+        width: 240px;
+        background-color: rgb(238, 238, 238);
+        border: 2px solid rgba(0, 0, 0, 0.199);
+        overflow: hidden;
+        border-radius: 8px;
+        height: 100%;
+    }
+
+    .picture {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .picture img {
+        display: block;
+        width:  150px;
+        height: 150px;
+        border: 1px solid rgba(0, 0, 0, 0.308);
+        border-radius: 50%;
+        -o-object-fit: cover;
+        object-fit: cover;
+        margin: 8px;
+    }
+    @media(max-width:600px){
+
+        .swiper-slide{
+            width: 240px;
+        }
+        .picture{
+            height: 165px;
+        }
+    }
+
+.details p{
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 8px;
+}
+.details .info{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 8px;
+    flex-wrap: wrap;
+}
+.details .info h5{
+    font-size: 15px;
+    font-weight: 600;
+    color: dodgerblue;
+}
+.details .socialmedia{
+    display: flex;
+    justify-content: center;
+}   
+.details .socialmedia .inner{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    padding: 4px 0 4px 0;
+}
+.details .socialmedia .inner i{
+    font-size: 14px;
+    padding: 6px 8px;
+    margin: 8px;
+    border-radius: 50%;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.459);
+}
+.details .socialmedia .inner .fa-facebook-f{
+    background-color: teal;
+    color: white;
+    padding: 8px 10px;
+}
+.details .socialmedia .inner .fa-instagram{
+    background-color: #fff;
+    font-size: 18px;
+    color: purple;
+}
+.details .socialmedia .inner .fa-twitter{
+    background-color: skyblue;
+    color: white;
+}
+.details .socialmedia .inner .fa-pinterest-p{
+    background-color: red;
+    color: white;
+}
+.details .socialmedia .inner .fa-snapchat-ghost{
+    background-color: yellow;
+    color: #fff;
+    text-shadow: 1px 1px black;
+}
+h6{
+    font-size: 55px;
+    font-weight: 700;
+    text-align: center;
+    width: 100%;
+    color: white;
+    padding: 15px;
+}
+.themaincontainer{
+    background-color: #222;
+}
+@media(max-width:510px){
+  #cont h6{
+    font-size: 38px;
+    letter-spacing: 2.5px;
+  }
+    .my-block-at-freya{
+      display: block;
+      margin-top: 15px;
+    }
+}
+/* The Page  The Page  The Page  The Page  The Page  The Page  The Page  The Page  The Page  The Page  The Page  The Page  The Page  The Page  The Page  The Page  The Page  The Page  The Page  The Page  The Page  The Page  The Page  The Page  The Page  The Page  The Page  The Page  The Page  The Page  The Page  The Page */
